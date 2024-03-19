@@ -1,0 +1,68 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.photo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50% ;
+
+}
+body{
+    background-color: black;
+    color: #fff;
+}
+
+.main{
+    margin: .5rem;
+    padding: 1rem ;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+}
+
+.title{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.information{
+    display: flex;
+    flex-direction:column ;
+    align-items: flex-start;
+    width: 100%	;
+}
+
+.information p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: .5rem;
+    font-size: 1.5rem;
+}
+
+.information p::before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-image: url("/icones/Contatos.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: .5rem ;
+}
+
+.information .job::before {
+    background-image: url("/icones/Contatos.svg");
+}
+.information .location::before {
+    background-image: url("/icones/Location.svg");
+}
+.information .phone::before {
+    background-image: url("/icones/zap.svg");
+}
+.information .email::before {
+    background-image: url("/icones/Email.svg");
+}
